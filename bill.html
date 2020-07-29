@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+    <script src="bill.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color: rgb(78, 247, 191);"><center><b style="color: rgb(4, 58, 58);font-size: 30px;padding: 30%;">ITEM LISTER</center></b></div>
+ <div id='container'>
+        <label style="color: black;font-size: 25px;">Enter the product name:</label><br><br>
+        <input type='text' id='product'  class="form-control" placeholder="enter product name"><br><br>
+        <label style="color: black;font-size: 25px;">Enter the product price:</label><br><br>
+        <input type='text' id='price'  class="form-control" placeholder="enter product price"><br><br>
+        <label id='qua' style="color: black;font-size: 25px;">Enter the product quantity:</label><br><br>
+        <input type='text' id='quantity'  class="form-control" placeholder="enter product quantity"><br><br>
+        <button id='addbtn' onclick=additem()>ADD PRODUCT</button>
+    </div>
+
+<div id='div'>
+    <table id='table' class="table table-striped" style="border:1px solid rgb(3, 80, 80)">
+        <tr>
+            
+            <th>PRODUCT</th>
+            <th>PRICE(1 unit)</th>
+            <th>QUANTITY</th>
+            <th>PRICE</th>
+            <th>ACTION</th>
+        </tr>
+       
+    </table>
+</div>
+<div id='totaldiv'>
+
+</div>
+</body>
+</html>
